@@ -39,7 +39,7 @@ export default async function ComparePage() {
     project: r.isConcrete ? "Concrete" : PROJECT_LABELS[r.project] ?? r.project,
     apy: r.apy,
     tvlUsd: r.tvlUsd,
-    isConcrete: r.isConcrete,
+    isConcrete: r.isConcrete ? "yes" : "no",
     poolId: r.poolId,
   }));
 
